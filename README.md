@@ -1,12 +1,17 @@
 # Terravolve
 
-Terravolve is a visual evolution simulator developed using Processing. In this simulation, herbivores (green) and carnivores (red) live in a flat world where food (black dots) spawns sporadically. The creatures must feed or starve, and if they have enough extra health the herbivores will lay eggs and the carnivores will birth offspring. These children will have mutated features, either increasing or decreasing expression. Over time, only the healthiest creatures will survive, and competition between species will push for ever-stronger genes.
+Terravolve is a Processing based visual evolution simulator. In the simple world of Terra, there are herbivores (green) and carnivores (red) that live in a flat world where food (black dots) spawns sporadically. The creatures must feed or starve, and if they have enough extra health, the herbivores will lay eggs and the carnivores will birth offspring. These children will have mutated features, either increasing or decreasing expression. Over time, only the healthiest creatures will survive and competition between species will push for ever-stronger genes.
 
-The user can select any creature to highlight them and view their specific features in the bottom left corner. Additionally, the user will be able to see that creature's viewing distance - creatures with great enough sight will be displayed with an eyeball on their body. Pressing the space key will display statistics on both of the populations overall. The speed of time can also be controlled with +/- keys.
+![Terravolve Screenshot](screenshot.png)
 
 ## Features
 
-The following features can be mutated for the two species:
+- Select any creature to highlight them and view their specific features in the bottom left corner.
+- View creature's viewing distance - creatures with great enough sight will be displayed with an eyeball on their body.
+- Press the space key to display statistics on both of the populations overall.
+- Control the speed of time with +/- keys.
+
+### Mutatable Features
 
 - Mutation Rate (How much these features get mutated in children)
 - Digestion (How well the creatures process food)
@@ -17,14 +22,17 @@ The following features can be mutated for the two species:
 - Max Health
 - Egg Time (Herbivores only, how long to wait before hatching)
 
-## Code
+## Code Structure
 
-The code for Terravolve consists of classes for carnivores, eggs, food, and herbivores, as well as helper functions for displaying the screen, updating the game state, and calculating the mutations.
+There are classes for carnivores, eggs, food, and herbivores, as well as helper functions for displaying the screen, updating the game state, and calculating the mutations. These classes are stored in separate pde files, as well as a pde file for the helper functions. The main Terravolve V1 pde file contains the setup and draw functions for running the program.
 
-## Usage
+## Getting Started
 
-To run the simulation, you will need to have Processing installed. Once installed, simply open the `Terravolve.pde` file and run the sketch. 
+1. Install [Processing](https://processing.org/download/)
+2. Clone this repository
+3. Open the main file `Terravolve.pde` in Processing
+4. Press the run button to start the simulation
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for more information.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
