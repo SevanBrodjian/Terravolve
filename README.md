@@ -25,10 +25,6 @@ The code for Terravolve consists of classes for carnivores, eggs, food, and herb
 
 To run the simulation, you will need to have Processing installed. Once installed, simply open the `Terravolve.pde` file and run the sketch. 
 
-## Credits
-
-This project was developed by [insert name here] as part of [insert project name or course here]. 
-
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more information.
